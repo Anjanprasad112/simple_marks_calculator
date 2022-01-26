@@ -13,9 +13,9 @@ def login(request):
     params={'name':'Anjan prasad','job':'Web developer'}
     return render(request, 'index.html',params)
 def removepunc(request):
-    maths =int(request.GET.get('maths','default'))
-    science =int( request.GET.get('science','default'))
-    social =int( request.GET.get('social','default'))
+    maths =int(request.POST.get('maths','default'))
+    science =int( request.POST.get('science','default'))
+    social =int( request.POST.get('social','default'))
     total = maths+science+social
     percent=float(total/3)
     print(percent)

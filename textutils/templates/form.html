@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>FORM</h1>
-    <form action="/removepunc" method="get">
+    <form action="/removepunc/" method="post">{% csrf_token %}
         <div>
           <span> <h2>Enter your Maths marks : </h2>
         <input type="number" name='maths'></span>
